@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="bmi.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>BMI Calculator</h1>
+
+<fieldset>
+    <legend>BMI Information</legend>
+    <label for="weightInPounds">Your weight in pounds</label>
+    <input type="number" id="weightInPounds" min="88" max="353" required>
+    <br>
+    <label for="heightInInches">Your height in inches</label>
+    <input type="number" id="heightInInches" min="50" max="79" step=".01" required>
+    <br>
+</fieldset>
+<br>
+<button>Calculate My BMI</button>
+
+<p class="output">Your BMI is <span id="totalBmi"></span></p>
+<p class="output">You are categorized as <span id="BMIstring"></span></p>
+
+
+</body>
+</html>
